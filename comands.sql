@@ -1,0 +1,11 @@
+INSERT INTO students (first_name, age, born) VALUES ("Lada", 16, 2005-06-17);
+INSERT INTO students (first_name, age, born) VALUES ("Jan", 19, 2001-01-05);
+INSERT INTO students (first_name, age, born) VALUES ("Adam", 19, 2001-01-05);
+UPDATE students SET age = 22 where id = 2;
+DELETE FROM students where ID = 3;
+SELECT * FROM students;
+SELECT age,age + 4 FROM students;
+SELECT first_name, age FROM students WHERE id = 1 OR 2 ;
+SELECT first_name,age FROM students limit 2  order by age DESC;
+UPDATE students set first_name = Ladislav WHERE first_name like "Lada" ;
+SELECT * FROM students where born = 2005-06-17;
